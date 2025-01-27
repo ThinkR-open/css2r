@@ -16,7 +16,7 @@ app_server <- function(input, output, session) {
         rv$site <- css2r$new(url = input$url_input)
 
         if (!is.null(rv$site$html_page)) {
-          if (!is.null(rv$site$domain_css_links)) {
+          if (!is.null(rv$site$domain_css_links) & length(rv$site$domain_css_links) > 0) {
             rv$continue <- input$analyze_btn
           } else {
             showModal(
