@@ -1,0 +1,71 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+  knitr::opts_chunk$set(
+    collapse = TRUE,
+    comment = "#>",
+    fig.path = "man/figures/README-",
+    out.width = "100%"
+)
+```
+
+# `{css2r}`
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+<!-- badges: end -->
+
+## Installation
+
+You can install the development version of `{css2r}` like so:
+
+```{r, eval=FALSE}
+remotes::install_github("ThinkR-open/css2r")
+```
+
+## Extract CSS properties from a webpage
+
+```{r}
+library(css2r)
+
+thinkr <- css2r$new(url = "https://thinkr.fr")
+```
+
+### Extract CSS files
+
+```{r}
+thinkr$domain_css_links
+```
+
+### Extract top colors
+
+```{r}
+thinkr$top_colors
+```
+### Show shiny theme
+
+```{r}
+cat(thinkr$shiny_code)
+```
+
+## Run the application
+
+You can launch the application by running:
+
+```{r, eval = FALSE}
+css2r::run_app()
+```
+
+## About
+
+You are reading the doc about version : `r golem::pkg_version()`
+
+This README has been compiled on the
+
+## Code of Conduct
+  
+Please note that the css2r project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.

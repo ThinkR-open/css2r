@@ -1,0 +1,27 @@
+Package: css2r
+Title: An Amazing Shiny App
+Version: 0.0.1
+Authors@R: 
+    person("Arthur", "Bréant", , "arthur@thinkr.fr", role = c("aut", "cre"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Imports: 
+    bslib,
+    cli,
+    config,
+    curl,
+    golem,
+    httr,
+    purrr,
+    R6,
+    rvest,
+    shiny,
+    urltools
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2
