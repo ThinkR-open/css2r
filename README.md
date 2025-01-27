@@ -7,6 +7,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/ThinkR-open/css2r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ThinkR-open/css2r/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 ## Installation
@@ -98,12 +99,6 @@ You can launch the application by running:
 ``` r
 css2r::run_app()
 ```
-
-## About
-
-You are reading the doc about version : 0.0.1
-
-This README has been compiled on the
 
 ## Code of Conduct
 
