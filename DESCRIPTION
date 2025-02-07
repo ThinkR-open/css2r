@@ -12,6 +12,7 @@ Imports:
     curl,
     golem,
     httr,
+    pkgload,
     purrr,
     R6,
     rvest,
